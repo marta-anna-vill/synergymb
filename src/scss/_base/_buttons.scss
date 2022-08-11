@@ -1,0 +1,26 @@
+.btn {
+    border: 2px solid transparent;
+    //border-radius: 5px;
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: center;
+    min-width: 15rem;
+    padding: 1.2rem 3rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    border: 4px solid $base-white;
+    background-color: rgba($color: #00000000, $alpha: 0.2);
+    font-size: 2rem;
+    padding: 4rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: rgba($color: #00000000, $alpha: 0.4);
+    }
+}

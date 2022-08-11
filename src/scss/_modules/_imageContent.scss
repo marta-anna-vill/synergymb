@@ -1,0 +1,31 @@
+.image-content-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .image-content-inner-content {
+        font-size: 16px;
+        line-height: 2.5rem;
+        h1 {
+            &::after {
+                position: absolute;
+                display: block;
+                content: "";
+                width: 50px;
+                height: 26px;
+                left: 0;
+                margin-left: -4.5px;
+                bottom: -28px;
+                z-index: 1;
+                background: url(../../../../Test/dist/images/underline.svg);
+            }
+        }
+        
+    }
+
+    .image-conten-inner-photo {
+        img {
+            max-height: 51rem;
+            width: 41rem;
+        }
+    }
+}

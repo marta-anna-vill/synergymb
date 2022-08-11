@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "noImplicitAny": false,
+      "target": "ESNext",
+      "module": "ESNext",
+      "sourceMap": true
+    },
+    "exclude": [
+      "./node_modules",
+      "./dist",
+    ],
+    "include" : ["./src/ts/**/*.ts"],
+  }
