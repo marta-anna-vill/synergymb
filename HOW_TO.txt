@@ -1,0 +1,6 @@
+1. Spuštění projektu po naclonování z githubu
+
+1/ Otevřít konzoli
+2/ npm i
+3/ gulp build
+4/ gulp
