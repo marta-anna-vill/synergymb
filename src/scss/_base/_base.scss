@@ -4,29 +4,16 @@
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-    width: 12px;
-    height: 3px;
-}
 
-::-webkit-scrollbar-thumb {
-    background: #db0a5b;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: black;
-}
-
-::-webkit-scrollbar-track {
-    background: #fff;
-}
 
 html {
     font-size: 10px;    
 }
 
 body {
-    font-size: 16px;
+    font-family: $font-family;
+    font-size: clamp(14px, 1.6rem, 1.6rem);
+    line-height: clamp(20px, 2.3rem, 2.3rem);
 }
 
 @media only screen and (min-width: 320px) {
@@ -77,8 +64,20 @@ img {
 }
 
 
-body {
-    font-family: 'Kaushan Script', cursive;
-    font-family: 'Montserrat Alternates', sans-serif;
-    background-color: #f7f7f7;
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $main-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $text-color;
+}
+
+::-webkit-scrollbar-track {
+    background: $body-color;
 }
