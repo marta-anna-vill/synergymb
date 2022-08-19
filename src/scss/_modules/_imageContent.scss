@@ -2,8 +2,43 @@
     //margin: ;
     .image-content-inner {
         display: grid;
+        grid-template-columns: 1fr 1fr;
         .image-content-text {
-    
+            h2 {
+                .subtitle {
+                    font-size: clamp(17px, 2rem, 2rem);
+                    line-height: clamp(25px, 3.2rem, 3.2rem);
+                    font-weight: 300;
+                }
+            }
+            .blockquote-item {
+                margin: 2rem 0 0 0;
+                padding: 0 0 0 5rem;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 5px;
+                    height: 50px;
+                    background-color: grey;
+                }
+                .blockquote-item-signature {
+                    position: relative;
+                    padding: 0 0 0 2rem;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 9px;
+                        left: 0;
+                        width: 16px;
+                        height: 2px;
+                        background-color: grey;
+                    }
+                }
+            }
         }
         .image-content-photo {
             img {
@@ -12,6 +47,5 @@
     }
 
     &.reversed-item {
-
     }
 }

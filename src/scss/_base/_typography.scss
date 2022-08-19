@@ -56,43 +56,54 @@ strong {
 }
 
 ul {
-
-    // TODO
+    list-style: none;
+    margin: 2rem 0;
+    
     li {
-        // TODO
+        margin: 0 0 1.5rem 0;
+        position: relative;
+        padding: 0 0 0 5rem; 
+        
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -2px;
+            background-color: $main-color;
+            color: $base-white;
+            height: clamp(20px, 2.2rem, 2.2rem);
+            width: clamp(20px, 2.2rem, 2.2rem);
+            border-radius: 20px 20px 0 20px;
+        }
     }
 }
 
 ol {
-    // TODO
-    max-width: 1050px; // proc tady je max width? to prece resi base-container nebo jiny container v kterem seznam pouzijeme
+    // TODO respo
+    max-width: 1050px; // proc tady je max width? to prece resi base-container nebo jiny container v kterem seznam pouzijeme // ja vim, ale ja jsem potrebovala vedet, jak to bude vypadat s vicero radky :D
     list-style: none;
     margin: 1rem 0;
-    z-index: 3; // z-index je tu proc?
 
     li {
         margin: 0 0 1.5rem 0;
         position: relative;
         counter-increment: inst;
-        // chybí tady levý padding - máš before posunutý do mínusu a vyteče tak z containeru - je potřeba aby posunutí before do mínusu nebylo vetší něž padding zde - muzes mrknout na nejaky nas projekt jak je to tam
+        padding: 0 0 0 5rem;
+
         &::before {
             content: counter(inst);
             position: absolute;
-            text-align: center; // smazat centrovaní vyresi display: flex; justify-content: center; align-items: center;
-            // kde máme property top:; ? je potreba vzdy nastzavit top a left - nebo right a bottom - zalezi kam chceme prvek napozicovat -> zkratka osetrit x osu a y osu
-            left: -42px; // pokud nastavis padding left na LI tak by zde nemelo byt potreba davat minusoví padding ale stacilo by zde left: 0;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            left: 0;
+            top: 2px;
             background-color: $main-color;
             color: $base-white;
-            font-size: 1em; // proc zde máme jednotku em?
-            height: 32px; // prosim predelat z px do rem skrz respo - idealne clamp(25px, 3.2rem, 3.2rem)
-            width: 32px; // -//-
+            height: clamp(25px, 3.2rem, 3.2rem); 
+            width: clamp(25px, 3.2rem, 3.2rem);
             border-radius: 20px 20px 0 20px;
-            box-shadow: 0 4px 4px 0 grey; // box shadow bych oddelal nebo odladil - takto se mi nelibi
             z-index: -1;
-        }
-
-        &::marker {
-            color: white; // tohle muzeme asi smazat
         }
     }
 }
