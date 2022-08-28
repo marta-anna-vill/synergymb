@@ -28,6 +28,12 @@ h3,
     text-transform: none;
     color: $text-color;
     margin: 3rem 0;
+    .subtitle {
+        display: block;
+        margin: 1.5rem 0 0 0;
+        font-size: clamp(17px, 1.9rem, 1.9rem);
+        line-height: clamp(25px, 2.5rem, 2.5rem);
+    }
 }
 
 h4,

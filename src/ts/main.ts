@@ -1,6 +1,7 @@
 
 
-import {Test} from './modules/test.js';
+import { Pricelist } from './modules/priceList.js';
 
-Test()
+export const pricelistInstance = new Pricelist();
+
 console.log("tss")
