@@ -1,0 +1,70 @@
+footer {
+    .footer-contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .footer-contact-content {
+            .footer-contact-item {
+                font-size: clamp(16px, 2.4rem, 2.4rem);
+                line-height: clamp(24px, 3rem, 3rem);
+                margin: 2rem 0;
+
+                // a {
+                //     position: relative;
+                //     &::before {
+                //         position: absolute;
+                //         color: $base-black;
+                //         top: 0;
+                //         left: -5%;
+                //         font-size: 2rem;
+                //         height: 24px;
+                //         width: 24px;
+                //         content: url(../../../src/images/blonde.jpg);
+                //         z-index: 2;
+                //     }
+                // }
+            }
+        }
+
+        .footer-contact-image {
+            img {
+                max-width: 70rem;
+            }
+        }
+    }
+
+    .footer-crosslink {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        border: 1px solid $color-line;
+        border-left: none;
+        border-right: none;
+        padding: 3rem 0;
+
+        .footer-crosslink-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            a {
+                //padding: 0.5rem 1rem;
+                text-decoration: none;
+                color: $text-color;
+
+                &:hover {
+                    border-bottom: 1px solid $main-color;
+                    color: $base-black;
+                }
+            }
+        }
+    }
+
+    .footer-map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 4rem 0;
+    }
+}

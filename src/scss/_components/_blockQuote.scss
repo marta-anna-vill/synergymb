@@ -1,0 +1,35 @@
+$blockquote-grey: #6b6a6a;
+$blockquote-light: #eee;
+
+.blockquote-item {
+    margin: 2rem 0 0 0;
+    padding: 0 0 0 5rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background-color: $blockquote-light;
+    }
+
+    .blockquote-item-signature {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0 0 0;
+        color: $blockquote-grey;
+
+        &::before {
+            content: "";
+            top: 9px;
+            left: 0;
+            width: 16px;
+            height: 2px;
+            background-color: $blockquote-grey;
+        }
+    }
+}

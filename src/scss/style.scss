@@ -6,6 +6,12 @@
 @import "./_base/_layout.scss";
 @import "./_base/_buttons.scss";
 
+//masterpage
+@import "./_masterpage/_footer.scss";
+
+//components
+@import "./_components/blockQuote.scss";
+
 
 //helpers
 @import "./_helpers/_helpers.scss";
